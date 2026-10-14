@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>みんなで早押し プライバシーポリシー / Minna de Hayaoshi Privacy Policy</title>
+<style>
+  :root { --fg: #2b2410; --bg: #fff8e1; --muted: #6b5d2e; --accent: #b3261e; --line: #f0dc9c; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5edd0; --bg: #231d0c; --muted: #cbbd8a; --accent: #ff8a80; --line: #4a3f1c; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.3; color: var(--accent); }
+  h2 { font-size: 1.15rem; margin-top: 2em; padding-top: .6em; border-top: 1px solid var(--line); }
+  .meta, small { color: var(--muted); }
+  nav a { color: var(--accent); margin-right: 1em; }
+  a { color: var(--accent); }
+  li { margin: .3em 0; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 3em 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ja">日本語</a><a href="#en">English</a></nav>
+
+<section id="ja" lang="ja">
+<h1>みんなで早押し プライバシーポリシー</h1>
+<p class="meta">制定日・最終更新日：2026年10月14日　／　提供者：KNights</p>
+
+<p>KNights（以下「提供者」）は、Android アプリ「みんなで早押し」（以下「本アプリ」）における利用者の情報の取り扱いを、以下のとおり定めます。本アプリは、Bluetooth Low Energy（BLE）で近くのスマートフォンどうしをつなぎ、クイズの早押しができるアプリです。</p>
+
+<h2>1. 基本方針</h2>
+<ul>
+<li>本アプリにはアカウント登録がなく、提供者はサーバーを運営していません。ゲームの通信は、近くのスマートフォンどうしの BLE だけで行い、インターネットは使いません。</li>
+<li>提供者は、利用者の氏名、メールアドレス、電話番号、位置情報などを収集しません。</li>
+<li>お問い合わせのメールをいただいた場合は、その内容（送信元のメールアドレスと本文）を回答のためにだけ使い、法令に基づく場合を除き第三者に提供しません。</li>
+</ul>
+
+<h2>2. 本アプリが扱う情報</h2>
+<ul>
+<li><strong>回答者の名前（ニックネーム）</strong>：回答者（子機）になるときに利用者が入力する名前です。次回の入力を省くため、回答者本人のスマートフォンの中（SharedPreferences）に保存します。ゲーム中は、BLE で接続した司会（親機）のスマートフォンにだけ送られ、参加者一覧や「○○さんが回答中」の表示に使われます。司会のスマートフォンでは、ルームを閉じると消え、保存されません。提供者に送られることはありません。</li>
+<li><strong>ルーム番号</strong>：司会（親機）が作る4桁の番号です。回答者が部屋を見つけるために BLE で周囲に知らせます。ルームを再開できるよう、司会のスマートフォンの中に保存します（約30分で期限切れ）。個人を特定する情報ではありません。</li>
+<li><strong>ゲームの操作</strong>：ボタンを押した、正解・不正解などの情報は、BLE でスマートフォンどうしの間でだけやりとりされ、保存しません。</li>
+<li><strong>設定・購入状態</strong>：広告の同意の状況、Pro 版を購入したかどうかを、端末の中に保存します。</li>
+</ul>
+<p>端末の中の情報は、本アプリをアンインストールするとすべて削除されます。</p>
+
+<h2>3. 権限の利用目的</h2>
+<ul>
+<li><strong>近くのデバイス（Bluetooth のスキャン・接続・アドバタイズ）</strong>（Android 12 以降）：司会のスマートフォンが部屋を知らせ、回答者のスマートフォンが部屋を探して接続するため。Bluetooth のスキャン権限は「位置情報の取得に使わない」設定（neverForLocation）で宣言しています。</li>
+<li><strong>位置情報（ACCESS_FINE_LOCATION）</strong>（Android 11 以下のみ）：Android 11 以下では、OS の仕組みとして BLE のスキャンに位置情報の権限が必要なため、その目的だけに使います。本アプリは位置情報を取得・保存・送信しません。</li>
+<li><strong>バイブレーション</strong>：ボタンを押したときや回答権を得たときに、振動でお知らせするため。</li>
+<li><strong>インターネット・広告 ID</strong>：広告の表示と Google Play 請求サービスのため（4 章）。ゲームの通信には使いません。</li>
+</ul>
+
+<h2>4. 外部サービス</h2>
+<ul>
+<li><strong>広告（Google AdMob）</strong>：無料版では、バナー広告と、ルームを終了・退出するときのインタースティシャル（全画面）広告を表示します。AdMob は、広告の表示・効果測定・不正防止のために、端末の広告 ID（アドバタイジング ID）、IP アドレス（おおよその地域の推定に使われることがあります）、端末やアプリの情報、広告の表示・タップの状況などを収集・利用することがあります。詳しくは <a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサイトでの情報の利用について</a> と <a href="https://policies.google.com/privacy?hl=ja">Google プライバシーポリシー</a> をご覧ください。欧州経済領域・英国などでは、最初に Google の同意管理（UMP）で広告についての同意をお聞きし、ホーム画面の「広告の同意の設定」から変更できます。広告 ID は、端末の設定（Google → 広告）でリセットや削除ができます。回答者の名前やルーム番号を広告に使うことはなく、AdMob に渡すこともありません。Pro 版では広告を表示しません。</li>
+<li><strong>Google Play 請求サービス</strong>：Pro 版（広告を消す・買い切り）の購入は Google が処理します。支払い情報を提供者が受け取ることはありません。本アプリは、購入が有効かどうかを Google Play に問い合わせて確認します。</li>
+</ul>
+
+<h2>5. 子どもの利用</h2>
+<p>本アプリは 13 歳未満の子どもを対象としていません。</p>
+
+<h2>6. ポリシーの変更</h2>
+<p>本ポリシーを変更する場合は、このページで最終更新日とともにお知らせします。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>KNights　メール：<a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Minna de Hayaoshi (みんなで早押し) Privacy Policy</h1>
+<p class="meta">Effective / last updated: October 14, 2026 · Provider: KNights</p>
+
+<p>This policy explains how KNights ("we") handles information in the Android app "Minna de Hayaoshi" ("the app"), a quiz buzzer app that connects nearby smartphones over Bluetooth Low Energy (BLE).</p>
+
+<h2>1. Overview</h2>
+<ul>
+<li>The app has no user accounts, and we do not run any servers. Game communication happens only between nearby phones over BLE, not over the internet.</li>
+<li>We do not collect personal information such as your name, e-mail address, phone number or location.</li>
+<li>If you e-mail us, we use your e-mail address and message only to answer you, and do not give them to third parties except where required by law.</li>
+</ul>
+
+<h2>2. Information the app handles</h2>
+<ul>
+<li><strong>Player name (nickname)</strong>: the name you type when you play as a player. It is saved only on your own phone (SharedPreferences) so you do not have to retype it. During a game it is sent over BLE only to the host phone you connect to, and is used for the player list and messages such as "X is answering". The host phone does not store it; it disappears when the room is closed. It is never sent to us.</li>
+<li><strong>Room number</strong>: a 4-digit number created by the host. It is broadcast over BLE so players can find the room, and kept on the host phone so a room can be resumed (it expires after about 30 minutes). It is not personally identifying.</li>
+<li><strong>Game actions</strong>: button presses and correct/incorrect results are exchanged only between the phones over BLE and are not stored.</li>
+<li><strong>Settings and purchase status</strong>: your ad consent status and whether you bought the Pro version are stored on your device.</li>
+</ul>
+<p>Uninstalling the app removes all information stored on your device.</p>
+
+<h2>3. Permissions</h2>
+<ul>
+<li><strong>Nearby devices (Bluetooth scan / connect / advertise)</strong> (Android 12 and later): so the host phone can announce a room and player phones can find and connect to it. The Bluetooth scan permission is declared with "never for location" (neverForLocation).</li>
+<li><strong>Location (ACCESS_FINE_LOCATION)</strong> (Android 11 and earlier only): on Android 11 and earlier the operating system requires this permission for BLE scanning, and we use it only for that purpose. The app does not collect, store or send your location.</li>
+<li><strong>Vibration</strong>: to give feedback when you press the button or win the right to answer.</li>
+<li><strong>Internet and advertising ID</strong>: for ads and Google Play Billing (section 4). They are not used for game communication.</li>
+</ul>
+
+<h2>4. Third-party services</h2>
+<ul>
+<li><strong>Ads (Google AdMob)</strong>: the free version shows banner ads and interstitial (full-screen) ads when you close or leave a room. AdMob may collect and use your device's advertising ID, IP address (which may be used to estimate your approximate region), device and app information, and ad views and taps, to show and measure ads and to prevent fraud. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. In the European Economic Area, the UK and some other regions, the app first asks for your consent through Google's User Messaging Platform (UMP), which you can change from "Ad consent settings" on the home screen. You can reset or delete your advertising ID in your device settings (Google → Ads). Player names and room numbers are never used for advertising or given to AdMob. The Pro version shows no ads.</li>
+<li><strong>Google Play Billing</strong>: purchases of the Pro version (removes ads, one-time) are processed by Google. We never receive your payment information. The app asks Google Play whether a purchase is valid.</li>
+</ul>
+
+<h2>5. Children</h2>
+<p>The app is not directed to children under 13.</p>
+
+<h2>6. Changes to this policy</h2>
+<p>If we change this policy, we will post the update on this page with a new "last updated" date.</p>
+
+<h2>7. Contact</h2>
+<p>KNights · E-mail: <a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
