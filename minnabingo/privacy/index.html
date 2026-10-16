@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>みんなでビンゴ プライバシーポリシー / Minna de Bingo Privacy Policy</title>
+<style>
+  :root { --fg: #1b2a49; --bg: #fffdf8; --muted: #5a6478; --accent: #c4421c; --line: #f0d9c8; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fg: #eef1f8; --bg: #141d30; --muted: #aab4c8; --accent: #ff9a7a; --line: #33405e; } }
+  :root[data-theme="dark"] { --fg: #eef1f8; --bg: #141d30; --muted: #aab4c8; --accent: #ff9a7a; --line: #33405e; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.3; color: var(--accent); }
+  h2 { font-size: 1.15rem; margin-top: 2em; padding-top: .6em; border-top: 1px solid var(--line); }
+  .meta, small { color: var(--muted); }
+  nav a { color: var(--accent); margin-right: 1em; }
+  a { color: var(--accent); }
+  li { margin: .3em 0; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 3em 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ja">日本語</a><a href="#en">English</a></nav>
+
+<section id="ja" lang="ja">
+<h1>みんなでビンゴ プライバシーポリシー</h1>
+<p class="meta">制定日・最終更新日：2026年10月16日　／　提供者：KNights</p>
+
+<p>KNights（以下「提供者」）は、Android アプリ「みんなでビンゴ」（以下「本アプリ」）における利用者の情報の取り扱いを、以下のとおり定めます。本アプリは、スマートフォン 1 台が抽選機になり、近くの参加者のスマートフォンと Bluetooth Low Energy（BLE）でつながるビンゴ大会アプリです。</p>
+
+<h2>1. 基本方針</h2>
+<ul>
+<li>本アプリにはアカウント登録がなく、提供者はサーバーを運営していません。ゲームの通信は、近くのスマートフォンどうしの BLE だけで行い、インターネットは使いません。</li>
+<li>提供者は、利用者の氏名、メールアドレス、電話番号、位置情報などを収集しません。</li>
+<li>お問い合わせのメールをいただいた場合は、その内容（送信元のメールアドレスと本文）を回答のためにだけ使い、法令に基づく場合を除き第三者に提供しません。</li>
+</ul>
+
+<h2>2. 本アプリが扱う情報</h2>
+<ul>
+<li><strong>ニックネーム</strong>：参加者が入力する名前です。次回の入力を省くため、参加者本人のスマートフォンの中に保存します。ゲーム中は、BLE で近くのスマートフォンに送られ、参加者の一覧や「○○さんビンゴ！」の表示に使われます。ビンゴになった人の名前は、司会の画面や、プロジェクタなどに映す観客画面にも表示されます（同じ会場にいる人が見えます）。提供者に送られることはありません。</li>
+<li><strong>ビンゴの結果・参加者の一覧</strong>：司会のスマートフォンの中に保存し、ゲームを続けられるようにします。保存された情報は、司会のスマートフォンの中だけにあり、提供者には送られません。本アプリをアンインストールすると削除されます。</li>
+<li><strong>部屋番号・カード番号・参加者 ID</strong>：部屋番号は司会が作る 4 けたの番号、カード番号はビンゴカードを表す番号、参加者 ID は本アプリを入れた端末ごとに作られる乱数です。いずれも BLE で周囲に知らせ、部屋を見つけたり、カードを照合したりするために使います。個人を特定する情報ではありません。</li>
+<li><strong>ゲームの操作</strong>：抽選の結果、ビンゴの申告などの情報は、BLE でスマートフォンどうしの間でだけやりとりされ、提供者には送られません。</li>
+<li><strong>紙カードの PDF</strong>：「紙カードを印刷」で作る PDF は、お使いの端末の中で作られ、共有の操作を行ったときだけ端末の外に出ます。提供者は受け取りません。</li>
+<li><strong>設定・購入状態</strong>：広告の同意の状況、観客画面の設定、Pro 版を購入したかどうかを、端末の中に保存します。</li>
+</ul>
+<p>端末の中の情報は、本アプリをアンインストールするとすべて削除されます。</p>
+
+<h2>3. 権限の利用目的</h2>
+<ul>
+<li><strong>近くのデバイス（Bluetooth のスキャン・接続・アドバタイズ）</strong>（Android 12 以降）：司会のスマートフォンが部屋を知らせ、参加者のスマートフォンが部屋を探すため。Bluetooth のスキャン権限は「位置情報の取得に使わない」設定（neverForLocation）で宣言しています。</li>
+<li><strong>位置情報（ACCESS_FINE_LOCATION）</strong>（Android 11 以下のみ）：Android 11 以下では、OS の仕組みとして BLE のスキャンに位置情報の権限が必要なため、その目的だけに使います。本アプリは位置情報を取得・保存・送信しません。</li>
+<li><strong>バイブレーション</strong>：ボタンを押したときや、ビンゴになったときに、振動でお知らせするため。</li>
+<li><strong>インターネット・広告 ID</strong>：広告の表示と Google Play 請求サービスのため（4 章）。ゲームの通信には使いません。</li>
+</ul>
+
+<h2>4. 外部サービス</h2>
+<ul>
+<li><strong>広告（Google AdMob）</strong>：無料版では、ゲームを終えてホームに戻るとき、または参加者が部屋を出てホームに戻るときに、全画面の広告を表示します。ゲームの途中には表示しません。AdMob は、広告の表示・効果測定・不正防止のために、端末の広告 ID（アドバタイジング ID）、IP アドレス（おおよその地域の推定に使われることがあります）、端末やアプリの情報、広告の表示の状況などを収集・利用することがあります。詳しくは <a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサイトでの情報の利用について</a> と <a href="https://policies.google.com/privacy?hl=ja">Google プライバシーポリシー</a> をご覧ください。欧州経済領域・英国などでは、最初に Google の同意管理（UMP）で広告についての同意をお聞きし、設定画面の「広告の同意の設定」から変更できます。広告 ID は、端末の設定（Google → 広告）でリセットや削除ができます。ニックネーム、ルーム番号、カード番号、ゲームの内容を広告に使うことはなく、AdMob に渡すこともありません。Pro 版では広告を表示しません。</li>
+<li><strong>Google Play 請求サービス</strong>：Pro 版（広告を消す・買い切り ¥300）の購入は Google が処理します。支払い情報を提供者が受け取ることはありません。本アプリは、購入が有効かどうかを Google Play に問い合わせて確認します。</li>
+</ul>
+
+<h2>5. 子どもの利用</h2>
+<p>本アプリは 13 歳未満の子どもを対象としていません。</p>
+
+<h2>6. ポリシーの変更</h2>
+<p>本ポリシーを変更する場合は、このページで最終更新日とともにお知らせします。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>KNights　メール：<a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Minna de Bingo (みんなでビンゴ) Privacy Policy</h1>
+<p class="meta">Effective / last updated: October 16, 2026 · Provider: KNights</p>
+
+<p>This policy explains how KNights ("we") handles information in the Android app "Minna de Bingo" ("the app"), a bingo game app in which one phone acts as the draw machine and nearby phones connect to it over Bluetooth Low Energy (BLE).</p>
+
+<h2>1. Overview</h2>
+<ul>
+<li>The app has no user accounts, and we do not run any servers. Game communication happens only between nearby phones over BLE, not over the internet.</li>
+<li>We do not collect personal information such as your name, e-mail address, phone number or location.</li>
+<li>If you e-mail us, we use your e-mail address and message only to answer you, and do not give them to third parties except where required by law.</li>
+</ul>
+
+<h2>2. Information the app handles</h2>
+<ul>
+<li><strong>Nickname</strong>: the name a player types. It is saved on the player's own phone so they do not have to retype it. During a game it is sent over BLE to nearby phones running the app, and is shown in the player list, in messages such as "X got bingo!", and on the host's screen and any audience display (people in the same room can see it). It is never sent to us.</li>
+<li><strong>Bingo results and player list</strong>: saved on the host's phone so that a game can be resumed. This information stays on the host's phone and is never sent to us. Uninstalling the app deletes it.</li>
+<li><strong>Room number, card number and player ID</strong>: the room number is a 4-digit number created by the host; the card number identifies a bingo card; the player ID is a random number created on each device. They are broadcast over BLE so that players can find a room and so that cards can be checked. None of them identifies you personally.</li>
+<li><strong>Game actions</strong>: draw results and bingo claims are exchanged only between phones over BLE and are not sent to us.</li>
+<li><strong>Paper card PDF</strong>: a PDF created with "Print paper cards" is made on your device. It leaves the device only if you use the share function. We do not receive it.</li>
+<li><strong>Settings and purchase status</strong>: your ad consent status, audience display settings and whether you bought the Pro version are stored on your device.</li>
+</ul>
+<p>Uninstalling the app removes all information stored on your device.</p>
+
+<h2>3. Permissions</h2>
+<ul>
+<li><strong>Nearby devices (Bluetooth scan / connect / advertise)</strong> (Android 12 and later): so the host phone can announce a room and player phones can find it. The Bluetooth scan permission is declared with "never for location" (neverForLocation).</li>
+<li><strong>Location (ACCESS_FINE_LOCATION)</strong> (Android 11 and earlier only): on Android 11 and earlier the operating system requires this permission for BLE scanning, and we use it only for that purpose. The app does not collect, store or send your location.</li>
+<li><strong>Vibration</strong>: to give feedback when you press a button or get bingo.</li>
+<li><strong>Internet and advertising ID</strong>: for ads and Google Play Billing (section 4). They are not used for game communication.</li>
+</ul>
+
+<h2>4. Third-party services</h2>
+<ul>
+<li><strong>Ads (Google AdMob)</strong>: the free version shows a full-screen ad when you finish a game and return to the home screen, or when a player leaves a room and returns home. Ads are never shown during a game. AdMob may collect and use your device's advertising ID, IP address (which may be used to estimate your approximate region), device and app information, and ad views, to show and measure ads and to prevent fraud. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. In the European Economic Area, the UK and some other regions, the app first asks for your consent through Google's User Messaging Platform (UMP), which you can change from "Ad consent settings" in the app's settings. You can reset or delete your advertising ID in your device settings (Google → Ads). Nicknames, room numbers, card numbers and game details are never used for advertising or given to AdMob. The Pro version shows no ads.</li>
+<li><strong>Google Play Billing</strong>: purchases of the Pro version (removes ads, one-time, ¥300) are processed by Google. We never receive your payment information. The app asks Google Play whether a purchase is valid.</li>
+</ul>
+
+<h2>5. Children</h2>
+<p>The app is not directed to children under 13.</p>
+
+<h2>6. Changes to this policy</h2>
+<p>If we change this policy, we will post the update on this page with a new "last updated" date.</p>
+
+<h2>7. Contact</h2>
+<p>KNights · E-mail: <a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
