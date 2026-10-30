@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ふたりで将棋 サポート / Shogi for Two Support</title>
+<style>
+  :root { --fg: #2a2118; --bg: #f9f4e8; --muted: #675e55; --accent: #8a5a2b; --line: #ddd3bd; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fg: #f1ece4; --bg: #1c1712; --muted: #bdb2a5; --accent: #e0b27a; --line: #43382c; } }
+  :root[data-theme="dark"] { --fg: #f1ece4; --bg: #1c1712; --muted: #bdb2a5; --accent: #e0b27a; --line: #43382c; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.3; color: var(--accent); }
+  h2 { font-size: 1.15rem; margin-top: 2em; padding-top: .6em; border-top: 1px solid var(--line); }
+  .meta, small { color: var(--muted); }
+  nav a { color: var(--accent); margin-right: 1em; }
+  a { color: var(--accent); }
+  li { margin: .3em 0; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 3em 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ja">日本語</a><a href="#en">English</a></nav>
+
+<section id="ja" lang="ja">
+<h1>ふたりで将棋 サポート</h1>
+<p class="meta">提供者：KNights</p>
+
+<p>「ふたりで将棋」は、スマートフォン 2 台を Bluetooth でつないで、ふたりで将棋（平手）を指す対戦アプリです。iPhone 版（無料・広告なし）と Android 版があります。</p>
+
+<h2>遊び方</h2>
+<ol>
+<li>ひとりが「部屋をつくる」を押すと、4けたの部屋番号が大きく出ます。</li>
+<li>もうひとりが「部屋をさがす」を押し、見つかった部屋の中から同じ番号を選びます。</li>
+<li>つながるとすぐに対局が始まります。1 局目の先手は振り駒（ランダム）で決まります。</li>
+<li>自分の駒（または持ち駒）をタップすると、動かせるマスに印が出ます。行き先をタップして指します。駒をドラッグして離しても指せます。</li>
+<li>成れるときは「成る / 成らない」を選びます（必ず成る場合は聞きません）。</li>
+<li>終局すると結果が出ます。「もう一局」を両方が押すと、先手と後手を入れ替えて続けられます。</li>
+</ol>
+<p>指せない手を選ぶと、理由が短く表示されます（相手の番です、王手を防ぐ必要があります、など）。二歩・行き所のない駒・打ち歩詰めは反則です。同じ局面が 4 回で千日手（引き分け）、王手をかけ続けた千日手はかけた側の負けです。</p>
+
+<h2>つながらないとき</h2>
+<ul>
+<li>2 台とも Bluetooth をオンにし、アプリの Bluetooth の利用を許可してください（iPhone：設定 → ふたりで将棋 → Bluetooth）。</li>
+<li>2 台を近く（1〜2 m）に置き、2 台ともアプリの画面を開いたままにしてください。ほかのアプリに切り替えると通信が切れます。</li>
+<li>「部屋をさがす」側で、部屋番号が同じ部屋を選んでいるか確認してください。</li>
+<li>見つからないときは、両方のアプリを一度終了して、もう一度「部屋をつくる」「部屋をさがす」からやり直してください。</li>
+<li>通信が切れても局面は残ります。同じ部屋に入り直すと続きから遊べます。</li>
+<li>端末の機種やまわりの電波の状況によっては、つながりにくいことがあります。</li>
+</ul>
+
+<h2>対応していないこと</h2>
+<p>持将棋・入玉宣言、対局時計（持ち時間）、待った、駒落ち、棋譜の保存には対応していません（平手のみ）。</p>
+
+<h2>プライバシー</h2>
+<p>アカウント登録もサーバーもありません。詳しくは <a href="../privacy/">プライバシーポリシー</a> をご覧ください。</p>
+
+<h2>お問い合わせ</h2>
+<p>不具合やご質問は、端末の機種と iOS のバージョン、状況を添えて、メールでご連絡ください。<br>KNights　メール：<a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Shogi for Two (ふたりで将棋) Support</h1>
+<p class="meta">Provider: KNights</p>
+
+<p>"Shogi for Two" is a head-to-head Shogi (Japanese chess, even games) for two devices connected over Bluetooth. The iPhone version is free and has no ads. An Android version is also available.</p>
+
+<h2>How to play</h2>
+<ol>
+<li>One player taps "Create room". A big 4-digit room number appears.</li>
+<li>The other player taps "Find room" and picks the same number from the rooms found nearby.</li>
+<li>The game starts as soon as the devices connect. Who moves first in the first game is decided at random.</li>
+<li>Tap one of your pieces (or a piece in hand) to see where it can go, then tap the destination. You can also drag a piece and release it.</li>
+<li>When a move can promote, choose "Promote" or "Don't promote". (Mandatory promotion is done for you.)</li>
+<li>When the game ends the result is shown. If both players tap "Rematch", the next game starts with the sides swapped.</li>
+</ol>
+<p>If you try an illegal move, a short message tells you why (not your turn, you must answer the check, ...). Double pawns (nifu), pieces with no legal move and pawn-drop checkmate (uchifuzume) are not allowed. The same position four times is a draw (sennichite); giving perpetual check loses.</p>
+
+<h2>Troubleshooting connections</h2>
+<ul>
+<li>Turn Bluetooth on for both devices and allow the app to use Bluetooth (iPhone: Settings → ふたりで将棋 → Bluetooth).</li>
+<li>Keep the two devices close together (1-2 m) and keep the app open on both. Switching to another app ends the connection.</li>
+<li>On the "Find room" side, make sure you pick the room with the same number.</li>
+<li>If the room is not found, quit the app on both devices and start again with "Create room" and "Find room".</li>
+<li>If the connection drops, the position is kept. Rejoin the same room to continue where you left off.</li>
+<li>Connecting may sometimes be difficult depending on the device model and surrounding radio conditions.</li>
+</ul>
+
+<h2>Not supported</h2>
+<p>Impasse (jishogi) and king-entering declarations, game clocks, takebacks, handicap games and saving game records. Even games only.</p>
+
+<h2>Privacy</h2>
+<p>There are no accounts and no servers. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+
+<h2>Contact</h2>
+<p>For bugs or questions, please e-mail us with your device model, OS version and what happened.<br>KNights · E-mail: <a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
