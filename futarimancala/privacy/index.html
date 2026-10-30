@@ -1,3 +1,148 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ふたりでマンカラ プライバシーポリシー / Mancala for Two Privacy Policy</title>
+<style>
+  :root { --fg: #1b2a22; --bg: #f7f5ee; --muted: #5a6560; --accent: #1e7b47; --line: #d9d6c8; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --fg: #eaf1ec; --bg: #14201a; --muted: #a9b8af; --accent: #6fd39b; --line: #2f4237; } }
+  :root[data-theme="dark"] { --fg: #eaf1ec; --bg: #14201a; --muted: #a9b8af; --accent: #6fd39b; --line: #2f4237; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.3; color: var(--accent); }
+  h2 { font-size: 1.15rem; margin-top: 2em; padding-top: .6em; border-top: 1px solid var(--line); }
+  .meta, small { color: var(--muted); }
+  nav a { color: var(--accent); margin-right: 1em; }
+  a { color: var(--accent); }
+  li { margin: .3em 0; }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 3em 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ja">日本語</a><a href="#en">English</a></nav>
+
+<section id="ja" lang="ja">
+<h1>ふたりでマンカラ プライバシーポリシー</h1>
+<p class="meta">制定日：2026年10月24日　最終更新日：2026年10月30日　／　提供者：KNights</p>
+
+<p>KNights（以下「提供者」）は、Android アプリおよび iPhone アプリ「ふたりでマンカラ」（以下「本アプリ」）における利用者の情報の取り扱いを、以下のとおり定めます。本アプリは、スマートフォン 2 台を Bluetooth Low Energy（BLE）でつないで、ふたりでマンカラを遊ぶ対戦アプリです。</p>
+
+<h2>1. 基本方針</h2>
+<ul>
+<li>本アプリにはアカウント登録がなく、提供者はサーバーを運営していません。対戦の通信は、ふたりのスマートフォンどうしの BLE だけで行い、インターネットは使いません。</li>
+<li>提供者は、利用者の氏名、メールアドレス、電話番号、位置情報などを収集しません。</li>
+<li>お問い合わせのメールをいただいた場合は、その内容（送信元のメールアドレスと本文）を回答のためにだけ使い、法令に基づく場合を除き第三者に提供しません。</li>
+</ul>
+
+<h2>2. 本アプリが扱う情報</h2>
+<ul>
+<li><strong>プレイヤー名</strong>：利用者が入力する名前です。次回の入力を省くため、利用者本人のスマートフォンの中に保存します。対戦中は、BLE で対戦相手のスマートフォンにだけ送られ、相手の画面に表示されます。提供者に送られることはありません。本名などの個人情報は使わないことをおすすめします。</li>
+<li><strong>対戦の内容（盤面・選んだ穴・ルールや石の数などの設定・もう一回の希望など）</strong>：BLE で、対戦するふたりのスマートフォンの間でだけやりとりされます。部屋をつくった側のスマートフォンが盤面を管理します。提供者や広告会社には送られません。通信が切れたあとに続きから遊べるよう、盤面はアプリの動作中だけ端末のメモリに保持され、アプリを終了すると消えます。</li>
+<li><strong>部屋番号</strong>：部屋をつくった人のスマートフォンが作る 4 けたの乱数です。BLE で周囲に知らせ、対戦相手が部屋を見つけるために使います。個人を特定する情報ではありません。</li>
+<li><strong>戦績</strong>：対戦数・勝ち・負け・引き分け・最高ゴール数を、利用者本人のスマートフォンの中にだけ保存します。提供者には送られません。「せいせき」画面から消すことができます。</li>
+<li><strong>設定・購入状態</strong>：音のオン・オフ、「数字」の表示の設定、広告の同意の状況、Pro 版を購入したかどうかを、端末の中に保存します。</li>
+</ul>
+<p>端末の中の情報は、本アプリをアンインストールするとすべて削除されます（Android では、設定からアプリのストレージを消去しても削除できます）。Android の場合、OS の仕組みにより、これらの情報がバックアップや端末の移行の対象になることがあります。Google Play の購入履歴や、Google が処理する広告関連の情報は、この操作では削除されません。それらは Google の各サービスと設定をご確認ください。</p>
+
+<h2>3. 権限の利用目的</h2>
+<ul>
+<li><strong>近くのデバイス（Bluetooth のスキャン・接続・アドバタイズ）</strong>（Android 12 以降）：部屋をつくる側のスマートフォンが部屋を知らせ、部屋をさがす側のスマートフォンが部屋を見つけて接続するため。Bluetooth のスキャン権限は「位置情報の取得に使わない」設定（neverForLocation）で宣言しています。</li>
+<li><strong>位置情報（ACCESS_FINE_LOCATION）</strong>（Android 11 以下のみ）：Android 11 以下では、OS の仕組みとして BLE のスキャンに位置情報の権限が必要なため、その目的だけに使います。本アプリは位置情報を取得・保存・送信しません。</li>
+<li><strong>バイブレーション</strong>：石を置いたときや相手が手を打ったときに、振動でお知らせするため。</li>
+<li><strong>インターネット・広告 ID</strong>：広告の表示と Google Play 請求サービスのため（4 章）。対戦の通信には使いません。</li>
+</ul>
+
+<h2>4. 外部サービス</h2>
+<ul>
+<li><strong>広告（Google AdMob）</strong>：無料版では、ホーム・待機・部屋さがし・じゅんびの画面の下部と、対戦画面の下部にバナー広告を表示します。また、対戦が終わったあとに「もう一回」または「ホームへ」を押したときに、全画面の広告を表示することがあります（1 戦につき 1 回まで、前回から 2 分以上あけます）。対戦の途中には全画面の広告を表示しません。広告の内容は、全年齢向け（PG）までに制限しています。AdMob は、広告の表示・効果測定・不正防止のために、端末の広告 ID（アドバタイジング ID）、IP アドレス（おおよその地域の推定に使われることがあります）、端末やアプリの情報、広告の表示の状況などを収集・利用することがあります。詳しくは <a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のサイトでの情報の利用について</a> と <a href="https://policies.google.com/privacy?hl=ja">Google プライバシーポリシー</a> をご覧ください。欧州経済領域・英国などでは、最初に Google の同意管理（UMP）で広告についての同意をお聞きし、ホーム画面の「広告の同意の設定」から変更できます。広告 ID は、端末の設定（Google → 広告）でリセットや削除ができます。プレイヤー名、部屋番号、対戦の内容を広告に使うことはなく、AdMob に渡すこともありません。Pro 版では広告を表示しません。</li>
+<li><strong>Google Play 請求サービス</strong>：Pro 版（広告を消す・買い切り ¥100）の購入と復元は Google Play 請求サービスを使います。支払いは Google が処理し、支払い情報を提供者が受け取ることはありません。本アプリは、購入が有効かどうかを Google Play に問い合わせて確認します。</li>
+</ul>
+
+<h2>4-2. iPhone 版について</h2>
+<p>iPhone 版（App Store で配布）の取り扱いは、上の 1〜3 章と同じです。ただし、次の点が Android 版と異なります。</p>
+<ul>
+<li>広告を表示せず、アプリ内課金もありません。Google AdMob・Google Play 請求サービスは使いません（4 章は iPhone 版には当てはまりません）。</li>
+<li>インターネットを使いません。対戦の通信は Bluetooth だけで行います。</li>
+<li>Bluetooth の利用許可は、部屋を知らせる・部屋を見つけて接続するためにだけ使います。位置情報の許可は求めません。</li>
+<li>プレイヤー名・設定（効果音、「数字」の表示）・戦績は、iPhone の中（UserDefaults）に保存します。</li>
+<li>石を置くときや相手が手を打ったときの振動（触覚フィードバック）を使います。</li>
+<li>提供者が利用者のデータを収集することはなく、トラッキングも行いません。</li>
+</ul>
+
+<h2>5. 子どもの利用</h2>
+<p>本アプリは 13 歳未満の子どもを対象としていません。</p>
+
+<h2>6. ポリシーの変更</h2>
+<p>本ポリシーを変更する場合は、このページで最終更新日とともにお知らせします。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>KNights　メール：<a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Mancala for Two (ふたりでマンカラ) Privacy Policy</h1>
+<p class="meta">Effective: October 24, 2026 · Last updated: October 30, 2026 · Provider: KNights</p>
+
+<p>This policy explains how KNights ("we") handles information in the Android and iPhone app "Mancala for Two" ("the app"), a two-player Mancala game in which two phones connect to each other over Bluetooth Low Energy (BLE).</p>
+
+<h2>1. Overview</h2>
+<ul>
+<li>The app has no user accounts, and we do not run any servers. Game communication happens only between the two phones over BLE, not over the internet.</li>
+<li>We do not collect personal information such as your name, e-mail address, phone number or location.</li>
+<li>If you e-mail us, we use your e-mail address and message only to answer you, and do not give them to third parties except where required by law.</li>
+</ul>
+
+<h2>2. Information the app handles</h2>
+<ul>
+<li><strong>Player name</strong>: the name you type. It is saved on your own phone so you do not have to retype it. During a game it is sent over BLE only to your opponent's phone and shown on their screen. It is never sent to us. We recommend not using your real name.</li>
+<li><strong>Game data (board, the pit you choose, settings such as the rule and number of stones, rematch requests)</strong>: exchanged only between the two phones over BLE. The phone that created the room manages the board. It is not sent to us or to advertisers. So that you can continue after a dropped connection, the board is kept only in the device's memory while the app is running and is erased when the app is closed.</li>
+<li><strong>Room number</strong>: a random 4-digit number created by the phone that creates the room. It is broadcast over BLE so that your opponent can find the room. It does not identify you personally.</li>
+<li><strong>Stats</strong>: games played, wins, losses, draws and your best goal count are stored only on your own phone and are never sent to us. You can erase them from the Stats screen.</li>
+<li><strong>Settings and purchase status</strong>: your sound setting, the "Numbers" display setting, ad consent status and whether you bought the Pro version are stored on your device.</li>
+</ul>
+<p>Uninstalling the app removes all information stored on your device (on Android, clearing the app's storage in Settings also removes it). On Android, this information may be included in device backups and device transfers by the operating system. Google Play purchase history and ad-related information processed by Google are not removed by this; please check your Google services and settings for those.</p>
+
+<h2>3. Permissions</h2>
+<ul>
+<li><strong>Nearby devices (Bluetooth scan / connect / advertise)</strong> (Android 12 and later): so the phone that creates a room can announce it and the other phone can find it and connect. The Bluetooth scan permission is declared with "never for location" (neverForLocation).</li>
+<li><strong>Location (ACCESS_FINE_LOCATION)</strong> (Android 11 and earlier only): on Android 11 and earlier the operating system requires this permission for BLE scanning, and we use it only for that purpose. The app does not collect, store or send your location.</li>
+<li><strong>Vibration</strong>: to notify you when stones are placed and when your opponent plays.</li>
+<li><strong>Internet and advertising ID</strong>: for ads and Google Play Billing (section 4). They are not used for game communication.</li>
+</ul>
+
+<h2>4. Third-party services</h2>
+<ul>
+<li><strong>Ads (Google AdMob)</strong>: the free version shows banner ads at the bottom of the home, waiting, room-list and lobby screens and at the bottom of the game screen. It may also show a full-screen ad after a finished game when you tap "Rematch" or "Home" (at most once per game and at least 2 minutes apart). Full-screen ads are never shown during a game. Ad content is limited to PG. AdMob may collect and use your device's advertising ID, IP address (which may be used to estimate your approximate region), device and app information, and ad views, to show and measure ads and to prevent fraud. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. In the European Economic Area, the UK and some other regions, the app first asks for your consent through Google's User Messaging Platform (UMP), which you can change from "Ad consent settings" on the home screen. You can reset or delete your advertising ID in your device settings (Google → Ads). Player names, room numbers and game data are never used for advertising or given to AdMob. The Pro version shows no ads.</li>
+<li><strong>Google Play Billing</strong>: purchases and restoring of the Pro version (removes ads, one-time, ¥100) use Google Play Billing. Payments are processed by Google, and we never receive your payment information. The app asks Google Play whether a purchase is valid.</li>
+</ul>
+
+<h2>4-2. iPhone version</h2>
+<p>The iPhone version (distributed on the App Store) handles information as described in sections 1–3, with these differences from the Android version:</p>
+<ul>
+<li>It shows no ads and has no in-app purchases. It does not use Google AdMob or Google Play Billing (section 4 does not apply to the iPhone version).</li>
+<li>It does not use the internet. Games are played over Bluetooth only.</li>
+<li>Bluetooth permission is used only to announce a room and to find and connect to a room. The app does not ask for location permission.</li>
+<li>Your player name, settings (sound effects, "Numbers") and stats are stored on your iPhone (UserDefaults).</li>
+<li>It uses vibration (haptic feedback) when stones are placed and when your opponent plays.</li>
+<li>We do not collect any of your data and do not track you.</li>
+</ul>
+
+<h2>5. Children</h2>
+<p>The app is not directed to children under 13.</p>
+
+<h2>6. Changes to this policy</h2>
+<p>If we change this policy, we will post the update on this page with a new "last updated" date.</p>
+
+<h2>7. Contact</h2>
+<p>KNights · E-mail: <a href="mailto:amnet0109@gmail.com">amnet0109@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
 <!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ふたりでマンカラ プライバシーポリシー</title><style>body{max-width:800px;margin:48px auto;padding:0 24px;font:17px/1.8 sans-serif;color:#222}h1{font-size:28px}h2{font-size:22px;margin-top:36px}p{overflow-wrap:anywhere}</style><main><h1>ふたりでマンカラ プライバシーポリシー</h1>
 <p>作成日: 2026年10月24日</p>
 <p>KNights（以下「運営者」）は、Androidアプリ「ふたりでマンカラ」（com.knights.futarimancala）における情報の取り扱いを、以下のとおり説明します。</p>
